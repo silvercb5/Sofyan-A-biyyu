@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bangers&family=Noto+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 40px 0;
+    font-family: 'sans-serif';
+    transition: all 0.2s ease;
+}
+.navbar.sticky{
+    padding: 20px 0;
+    background: red; 
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+}
+.navbar .logo a span{
+    color: red;
+    transition: all 0.2s ease;
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+
+}
+.navbar .menu li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 20px;
+    transition: color 0.2s ease;
+}
+.navbar .menu li a:hover{
+    color: red;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
+/* Home Section Styling */
+.home{
+    display: flex;
+    background: url("D.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 300px;
+    font-family: 'sans-serif';
+}
+.home .max-width{
+    margin: auto 0 auto 750px;   
+}
+.home .home-content .text-1{
+    font-size: 30px;
+}
+.home .home-content .text-2{
+    font-size: 40px;
+    font-weight: 450;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 30px;
+}
+.home .home-content .text-3 span{
+    font-size: 30px;
+    color: red;
+    font-weight: 700;
+}
+
+/* responsive media query start */
+@media (max-width: 911px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: black;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+}
